@@ -14,12 +14,16 @@
   border-radius: 41px;
   background-color: #e02c6d;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
   border: none;
-  padding: 10px 24px;
+  padding: 10px 0;
   font-family: var(--primary-font-style);
   color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
 }
 
 .body {
@@ -50,11 +54,12 @@
 .nav-container a,
 svg {
   text-decoration: none;
-  margin: 0 14px;
+  margin: 0 34px;
   color: var(--primary-font-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
+  cursor: pointer;
 }
 
 /*header styles end*/
@@ -64,23 +69,23 @@ svg {
 .banner {
   margin: 70px 120px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  height: 650px;
 }
 
 .banner-title {
   font-family: var(--primary-font-style);
   color: var(--primary-font-color);
+  flex-shrink: 0;
 }
 
 .banner-title h1 {
-  font-size: 52px;
+  font-size: 72px;
   font-style: normal;
   font-weight: 700;
   line-height: 70px;
   margin-bottom: 16px;
-  width: 582px;
-  height: 133px;
-  flex-shrink: 0;
+  padding-top: 100px;
 }
 
 .banner-title p {
@@ -89,51 +94,222 @@ svg {
   font-weight: 600;
   line-height: normal;
   margin-bottom: 16px;
-  flex-shrink: 0;
-  margin-right: 200px;
 }
 
 .banner-image {
   background-image: url("/resources/images/Circle design.svg");
-  background-size: 440px 480px;
-  align-content: center;
-  justify-items: center;
+  background-size: 540px 580px;
+  width: 650px;
   background-repeat: no-repeat;
-  position: relative;
-  left: 50px;
-  height: 500px;
-  /* border: 1px solid ; */
-  position: relative;
-  top: -50px;
 }
 
 .camera-image {
-  width: 440px;
-  height: 414px;
+  width: 540px;
+  height: 514px;
   position: relative;
   top: 30px;
+}
+
+.Preebook-btn span {
+  position: relative;
+  right: -28px;
+  width: 120px;
+  height: 24px;
+}
+
+.Preebook-btn svg {
+  position: relative;
+  right: 2px;
 }
 /*banner style ends*/
 
 /*company-logos style start*/
 
-.company-logos{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 70px 120px;
-    padding: 10px;
-    border-top: 1px solid #f1eaea;
-    border-bottom: 1px solid #f7f3f3;
-    position: relative;
-    top: -80px;
+.company-logos {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 70px 120px;
+  padding: 10px;
+  border-top: 1px solid #f1eaea;
+  border-bottom: 1px solid #f7f3f3;
+  position: relative;
+  top: -80px;
 }
 
 /* company-logos style ends */
 
 /* popular collection style start */
 
-.popular-collection-container{
-    margin: 70px 120px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.popular-collection-title {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-font-color);
+  font-family: var(--primary-font-style);
+  font-size: 38px;
+}
+
+.popular-collection-container {
+  margin: 70px 120px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 500px);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px;
+  position: relative;
+  top: -70px;
+}
+
+.item {
+  width: 480px;
+  height: 620px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  margin: 30px;
+  padding: 17px 14px;
+}
+
+.item h3 {
+  color: #18191f;
+  font-feature-settings: "liga" off;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.item h4 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.item h5 {
+  color: #787885;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 143%; /* 20.02px */
+  letter-spacing: 0.252px;
+}
+
+.item-image {
+  height: 387px;
+}
+
+.stars {
+  position: relative;
+  top: -25px;
+}
+
+.item-info {
+  position: relative;
+  top: -30px;
+}
+
+/* popular collection style end */
+
+/*feature product style start*/
+
+.featured-product {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 120px;
+}
+
+.featured-product-description {
+  padding-top: 50px;
+}
+
+.fp-title {
+  font-family: var(--primary-font-style);
+  color: #0a0826;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 36px;
+}
+
+.fp-description {
+  font-family: var(--primary-font-style);
+  color: #6c6c6c;
+  width: 501px;
+  height: 88px;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 46px;
+}
+
+.featured-product-image img {
+  width: 654px;
+}
+
+.join-btn {
+  border-radius: 0px;
+  padding: 10px 10px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.join-btn span {
+  position: relative;
+  right: -25px;
+}
+
+/*footer style*/
+
+.footer-container {
+  background-color: #0a0826;
+  text-align: center;
+  height: 239px;
+}
+
+.footer-contents{
+    margin-top: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--primary-font-style);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.copyright {
+  color: #d9dbe1;
+  font-feature-settings: "liga" off;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+}
+
+.footer-icons{
+    justify-content: center;
+    margin: 16px;
+    cursor: pointer;
+}
+
+
+/*for mobile devices*/
+
+@media screen and (max-width: 576px) {
+    
 }
