@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --btn-color: #e02c6d;
+  --primary-font-color: #3a3a3a;
+  --primary-font-style: Poppins;
+}
+
+.btn {
+  border-radius: 41px;
+  background-color: #e02c6d;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 10px 24px;
+  font-family: var(--primary-font-style);
+  color: #fff;
+}
+
+.body {
+  max-width: 1440px;
+}
+
+/*header styles start*/
+.nav-container {
+  font-family: var(--primary-font-style);
+  color: var(--primary-font-color);
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 120px;
+}
+
+.nav-title {
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  top: -6px;
+}
+
+.nav-container ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-container a,
+svg {
+  text-decoration: none;
+  margin: 0 14px;
+  color: var(--primary-font-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/*header styles end*/
+
+/*banner section styles starts*/
+
+.banner {
+  margin: 70px 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-title {
+  font-family: var(--primary-font-style);
+  color: var(--primary-font-color);
+}
+
+.banner-title h1 {
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 16px;
+  width: 582px;
+  height: 133px;
+  flex-shrink: 0;
+}
+
+.banner-title p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+  margin-right: 200px;
+}
+
+.banner-image {
+  background-image: url("/resources/images/Circle design.svg");
+  background-size: 440px 480px;
+  align-content: center;
+  justify-items: center;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 50px;
+  height: 500px;
+  /* border: 1px solid ; */
+  position: relative;
+  top: -50px;
+}
+
+.camera-image {
+  width: 440px;
+  height: 414px;
+  position: relative;
+  top: 30px;
+}
+/*banner style ends*/
+
+/*company-logos style start*/
+
+.company-logos{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px 120px;
+    padding: 10px;
+    border-top: 1px solid #f1eaea;
+    border-bottom: 1px solid #f7f3f3;
+    position: relative;
+    top: -80px;
+}
+
+/* company-logos style ends */
+
+/* popular collection style start */
+
+.popular-collection-container{
+    margin: 70px 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
